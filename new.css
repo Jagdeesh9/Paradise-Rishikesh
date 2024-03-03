@@ -1015,15 +1015,20 @@ nav>.menu>a>button,nav>.sidebar>ul>a>button{
 .social>a{
   height: 40px;
   width: 40px;
-  background-color: goldenrod;
+  background-color: yellow;
   border-radius: 50%;
   display: flex;
   align-items: center;
   text-decoration: none;
   justify-content: center;
+  transition: all .5s;
 }
 .social>a>i{
   font-size: 1.3rem;
+  color:black;
+}
+.social>a:hover{
+  background-color: goldenrod;
   color: white;
 }
 @media(max-width:950px){
@@ -1091,6 +1096,7 @@ nav>.menu>a>button,nav>.sidebar>ul>a>button{
   grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(2,1fr);
   padding: 5vh 10vw;
+  gap: 2vw;
   }
 .contactGridItm{
   background-color: #3B9AB0;
@@ -1106,6 +1112,7 @@ nav>.menu>a>button,nav>.sidebar>ul>a>button{
   .contactGrid{
       grid-template-rows:1fr;
       grid-template-columns:1fr;
+      gap: 30px;
       /* background-color: rebeccapurple; */
   }
 }
