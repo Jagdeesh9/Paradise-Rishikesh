@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardImage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .cardContainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10vh 10vw;
+            gap: 5vw;
+            flex-wrap: wrap;
+            background-color: #003E53;
+        }
+        
+        .cardContainer>.cards{
+            max-width: 350px;
+            background-color: whitesmoke;
+        }
+        .cardContainer>.cards>.cardImage>img{
+            width: 100%;
+            aspect-ratio: 4/3;
+        }
+        .cardTxt{
+            padding: 1vw;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            gap: 2vh;
+        }
+        .cardTxt>.cardbtns{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .cardTxt>.cardbtns>button{
+            padding:1.5vh;
+            border: none;
+            flex-grow: 1;
+            box-shadow: 0px 0px 5px lime;
+            font-size: 1rem;
+            color:black;
+            font-weight: bold;
+        }
+        .cardTxt>.cardbtns>button:first-child{
+            border: 1px solid orangered;
+            border-radius: 5px;
+        }
+        .cardTxt>.cardbtns>button:last-child{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardContainer">
+        
+        <div class="cards">
+            <div class="cardImage">
+                <img src="../images/3.jpeg" alt="">
+            </div>
+            <div class="cardTxt">
+                <h2>Yoga tour at Rishikesh</h2>
+                <span>
+                    <i class="fa fa-map-marker"></i> Shivpuri Rishikesh
+                    &nbsp;
+                    <i class="fa fa-clock-o"></i> 3days / 3 night
+                </span>
+    
+                <div class="cardbtns">
+                    <button><i class="fa fa-inr"></i> 6500/ person</button>
+                    <button>details <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cardImage">
+                <img src="../images/1.jpg" alt="">
+            </div>
+            <div class="cardTxt">
+                <h2>Yoga tour at Rishikesh</h2>
+                <span>
+                    <i class="fa fa-map-marker"></i> Shivpuri Rishikesh
+                    &nbsp;
+                    <i class="fa fa-clock-o"></i> 3days / 3 night
+                </span>
+    
+                <div class="cardbtns">
+                    <button><i class="fa fa-inr"></i> 6500/ person</button>
+                    <button>details <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cardImage">
+                <img src="../images/4.jpeg" alt="">
+            </div>
+            <div class="cardTxt">
+                <h2>Yoga tour at Rishikesh</h2>
+                <span>
+                    <i class="fa fa-map-marker"></i> Shivpuri Rishikesh
+                    &nbsp;
+                    <i class="fa fa-clock-o"></i> 3days / 3 night
+                </span>
+    
+                <div class="cardbtns">
+                    <button><i class="fa fa-inr"></i> 6500/ person</button>
+                    <button>details <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

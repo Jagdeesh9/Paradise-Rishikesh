@@ -1,0 +1,1111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/*-------------------------------------- book your camps------------------------------------------------------------- */
+.bookingContainer{
+    padding: 20px 50px;
+    background-image: url('./images/5.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/3.jpeg');
+    background-attachment:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.bookingContainer>button{ 
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+.bookingContainer>h2{
+    /* font-size: 30px; */
+    padding-bottom: 10px;
+    color: white;
+    letter-spacing: 0.3rem;
+}
+@media(min-width:768px){
+    .bookingContainer{
+        padding: 20px 150px;
+    }
+    .bookingContainer>h2{
+        padding: 0;
+    }
+}
+/*-------------------------------------- book your end------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------section 1 start-------------------------------------------------------- */
+.Welcome{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 10vw;
+    flex-wrap: wrap-reverse;
+    gap: 5vw;
+}
+.WelcomeItms{
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.WelcomeItms>h1,
+.row>.showItems>h2,
+.advItms:first-child>h2{
+    font-family: calibri;
+    margin-bottom: 10px;
+}
+.WelcomeItms>p,
+.row>.showItems>p,
+.advItms>p{
+    font-size:1.3rem;
+    line-height:2rem;
+    text-align:left;
+}
+
+.WelcomeItms:last-child>img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    /* height: 100%; */
+}
+.WelcomeItms:nth-child(2){
+    font-size: 20px;
+    font-family: calibri;
+}
+.welTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+
+/* ------------------------------------------section 1 end-------------------------------------------------------- */
+/* ------------------------------------------------------showcase--------------------------------------------- */
+.faciContainer{
+    background-color: whitesmoke;
+    padding: 2vw 10vw;
+}
+.row{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap-reverse;
+    gap: 5vw;
+}
+.row:nth-child(even){
+    flex-wrap: wrap;
+}
+.row>div{
+    max-width: 500px;
+    /* min-width: none; */
+}
+.row>div>img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 5px solid rgb(179, 198, 245);
+}
+.row>h2,
+.eveTitle>h2{
+    font-family: calibri;
+    font-size: 40px;
+}
+.row>.showItems>h2{
+    font-size: 2rem;
+}
+
+@media(min-width:768px){
+    .faciContainer{
+        padding: 2vw 10vw;
+    }
+}
+/* ------------------------------------------------------showcase end---------------------------------------------- */
+
+/* card start------------------------------------------------------------------------------------------------------ */
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 2vw;
+    gap: 2vw;
+    flex-wrap: wrap;
+    background-color: #003E53;
+    width: 100%;
+}
+
+.cardContainer>.cards{
+    max-width: 350px;
+    background-color: whitesmoke;
+}
+.cardContainer>.cards>.cardImage>img{
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.cardTxt{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2vh;
+}
+.cardTxt>.cardbtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.cardTxt>.cardbtns>button,.cardTxt>.cardbtns>a{
+    padding:1.5vh;
+    border: none;
+    flex-grow: 1;
+    box-shadow: 0px 0px 5px lime;
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+}
+.cardTxt>.cardbtns>button:first-child{
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+.cardTxt>.cardbtns>a{
+    background-color: green;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}/* card end------------------------------------------------------------------------------------------------------ */
+/* adventure start------------------------------------------------------------------------------------------------------ */
+.adventureContainer{
+    padding:2vw 10vw;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.advItms:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.advItms>span{
+    font-size: 2rem;
+}
+.advItms:first-child>h2,.advItms:first-child>p{
+    font-size: 25px;
+    font-family: calibri;
+}
+.advItms:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.advItms>img{
+    flex-grow: 1;
+    max-width: 350px;
+    aspect-ratio: 4/4;
+    margin-bottom: 10px;
+}
+@media(min-width:768px){
+    .adventureContainer{
+        padding: 2vw 10vw;
+    }
+    .advItms>img{
+        max-width: 300px;
+    }
+}
+/* adventure end------------------------------------------------------------------------------------------------------ */
+
+/* eVENT START------------------------------------------------------------------------------------------------------ */
+.eveTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 2vw 10vw;
+    border-bottom: 1px solid gray;
+}
+.eveContainer{
+    padding: 2VW 10vw;
+    background-color: whitesmoke;
+    display: grid;
+    gap:2vw;
+}
+.eveItms:first-child{
+    display: grid;
+    gap: 1vw;
+}
+.eveItms>iframe{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.events>img{
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+
+@media(min-width:768px){
+    .eveContainer{
+        padding: 2VW 10VW;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .eveItms{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .eveTitle{
+        padding: 2VW 10VW;
+    }   
+}
+/* EVENT end------------------------------------------------------------------------------------------------------ */
+
+/* footer Start--------------------------------------------------------------------------------------------------------- */
+footer{
+    padding: 2vw 10vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/3.jpeg');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Calibri;
+    color: whitesmoke;
+}
+
+
+.footItms>ul{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    max-width: 250px;
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+.footItms>ul>li{
+    padding: 5px;
+}
+.footItms>ul>li>a,.footItms>ul>span{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.footItms>ul>h2{
+    margin-bottom: 2vh;
+}
+.endLine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px dotted white;
+    margin-top: 50px;
+}
+/* footer End--------------------------------------------------------------------------------------------------------- */
+
+/* title starts-------------------------------------------------------------------------------------------- */
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 1vh;
+    gap: 2vh;
+    padding:2vh 5vw;
+}
+.title>h2{
+    font-size: 2rem;
+    text-align: center;
+}
+/* title ends-------------------------------------------------------------------------------------------- */
+
+
+/* testimonial starts-------------------------------------------------------------------------------------------- */
+.owl-carousel{
+    padding: 10vh 10vw;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.item{
+    background-color: black;
+    padding: 20px;
+}
+
+.item>p,.item>i{
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+/* testimonial ens-------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page start--------------------------------------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+  }
+
+  /* first section ---------------------------------------------------------------------- */
+  .aboutYellow{
+    /* border: 2px solid black; */
+    height: 40vw;
+  }
+  .aboutYellow>div{
+    width: 100%;
+    height: 30vw;
+    background-color: gold;
+  }
+  .aboutYellow>img{
+    position: absolute;
+    width: 60vw;
+    aspect-ratio: 16/9;
+    left: 20vw;
+    top: 10vh;
+  }
+  .aboutContainer{
+    padding: 5vh 10vw;
+    background-color: #D1E4DD;
+
+  }
+  .aboutFlex{
+    display: flex;
+    gap: 10vw;
+    flex-wrap: wrap;
+  }
+  .aboutFlex>div{
+    max-width: 600px;
+  }
+  .aboutFlex>div>p{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .aboutFlex>div>h2{
+    margin-bottom: 10px;
+  }
+  .aboutFlex>div>ul{
+    list-style: none;
+  }
+  .aboutFlex>div>ul>li{
+    padding: 5px 10px;
+    font-size: 1.3rem;
+  }
+ 
+  .aboutRow{
+    margin-bottom: 20px;
+  }
+  .aboutRow>h2{
+    font-size: 2rem;
+  }
+  /* first section ---------------------------------------------------------------------- */
+
+  /* second section ---------------------------------------------------------------------- */
+  .aboutfacilities{
+    padding: 10vh 10vw;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2vw;
+    /* flex-wrap: wrap; */
+  }
+  @media(max-width:1000px){
+    .aboutfacilities{
+      flex-wrap: wrap;
+    }
+  }
+
+  .aboutimages{
+    padding-top: 5vh;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap:1vw;
+  }
+  
+
+  .aboutfacilities>.aboutimages{
+    max-width: 500px;
+  }
+  .aboutimages>div{
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+  }
+  .aboutimages>div>img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: all .5s;
+
+  }
+  .aboutimages>div>img:hover{
+    transform: scale(1);
+    border: 5px solid gold;
+    
+  }
+  .facText>h2{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  .facText>p{
+    font-size: 1.3rem;
+    margin-bottom:30px;
+  }
+  /* second section end---------------------------------------------------------------------- */
+ 
+
+  /* third section start---------------------------------------------------------------------- */
+
+  .aboutAcordino{
+    padding: 5vh 10vw;
+    background-color:#D1E4DD;
+  }
+  .aboutAcordino>h2{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+  }
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.3rem;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel>p{
+    font-size: 1.2rem;
+    padding: 2vh;
+  }
+  .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  /* third section end---------------------------------------------------------------------- */
+  
+  
+  
+  /* third section starts---------------------------------------------------------------------- */
+  .aboutFollow{
+    font-size: 2rem;
+    padding: 5vh 10vw;
+    color: white;
+    background-color:#363636;
+  }
+  .aboutFollow>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2vh;
+  }
+  .aboutFollow>div>a{
+    width: 60px;
+    aspect-ratio: 1/1;
+    background-color: yellow;
+    text-decoration: none;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+  }
+
+  .aboutFollow>div>a>i{
+    color: #363636;
+    transition: all .5s;
+  }
+  .aboutFollow>div>a:hover{
+    background-color: goldenrod;
+  }
+  .aboutFollow>div>a:hover i{
+    color: white;
+  }
+  /* fourth section end---------------------------------------------------------------------- */
+
+
+  /* about contact  section start---------------------------------------------------------------------- */
+  .aboutContact{
+    width: 100%;
+    padding: 10vh 10vw;
+    background-image: url("./images/3.jpeg");
+    background-size: 100% 100%;
+  }
+  .aboutform{
+    width: 100%;
+    /* padding: 10vh 5vw; */
+    background-size: 100% 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .aboutform>div:last-child{
+    flex-basis: 600px;
+  }
+  .aboutform>.visit,.aboutform>.form{
+    padding: 20px 0;
+    background-color: white;
+    color: black;
+  }
+  .aboutform>.visit{
+    padding: 20px;
+  }
+  .aboutform>.form{
+    background-color: transparent;
+  }
+  .visit>h2{
+    font-size: 2rem;
+  }
+  .visit>div{
+    padding: 10px 0;
+    font-size: 1.3rem;
+    /* max-width: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .visit>div>i{
+    font-size: 25px;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form>h2{
+    font-size: 2rem;
+    color: white;
+  }
+  .form>p{
+    font-size: 1.5rem;
+    color: white;
+    
+  }
+  .form>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .form>div>input{
+    padding:20px;
+    border: none;
+    flex-grow: 1;
+  }
+  .form>input,.form>button{
+    padding: 20px;
+  }
+  .form>button{
+    background-color: gold;
+    border: none;
+    font-size: 1.5rem;
+  }
+  input:active{
+    border: none;
+  }
+  /* about contact section end---------------------------------------------------------------------- */
+
+  /* about page end ------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* package page start --------------------------------------------------------------------------------- */
+ /* hero section-------------------------------------------------------------------------------- */
+ .campingHero{
+  height: 60vh;
+  background-image: url('./images/2.jpeg');
+  background-size: 100% 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+.campingHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+.campingHero>span>a{
+  text-decoration: none;
+  color: gold;
+
+}
+.campingHero>span,.campingHero>h1{
+  z-index: 11;
+
+}
+/* hero section end -------------------------------------------------------------------------------- */
+
+/* package cards section starts -------------------------------------------------------------------------------- */
+.packageCardContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #D1E4DD;
+}
+.packageTitle{
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5vh 10vw;
+}
+.packageTitle>h2{
+  font-size: 2rem;
+  color:#1A6889;
+}
+.packageTitle>p{
+  font-size: 1.5rem;
+}
+.packagesCards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 5vw; */
+  flex-wrap: wrap;
+  width: 80%;
+}   
+.packageCard{
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+.packageCard>h2{
+  color: green;
+}
+.packageCard>div>ul{
+  list-style: none;
+}
+.packageCard>div>p,.packageCard>div>ul>li{
+  padding: 5px;
+  font-size: 1.1rem;
+}
+.packageCard>div>ul>li>i{
+  color: green;
+}
+.packageCard>div>p{
+  border-bottom: 1px solid black;
+}
+
+/* package cards section end -------------------------------------------------------------------------------- */
+
+/* package booking section starts -------------------------------------------------------------------------------- */
+.discountContainer{
+  padding: 5vw 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D1E4DD;
+}
+.discountBooking{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-wrap: wrap;
+  /* background-color: rebeccapurple; */
+}
+.discountBooking>div{
+  flex-grow: 1;
+  max-width: 500px;
+  overflow: hidden;
+
+}
+.discountBooking>div>h2{
+  font-size: 1.5rem;
+}
+.discountBooking>div>p{
+  font-size: 1.2rem;
+  text-align: center;
+}
+.discountBooking>div>a>button{
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.discountBooking>div:last-child{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding:10px;
+  gap: 20px;
+}
+.discountBooking>div>img{
+  width: 100%;
+  aspect-ratio: 16/9;
+  transition: all .5s;
+}
+.discountBooking>div>img:hover{
+  transform:scale(1.3);
+}
+/* package booking section end -------------------------------------------------------------------------------- */
+
+.packageVacation{
+  padding: 10vh 10vw;
+  background-color: #1A6889;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.packageVacation>h2{
+  font-size: 2.5rem;
+  font-family: cursive;
+}
+.packageVacation>a>button{
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* pacakage page end --------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* gallary  starts --------------------------------------------------------------------------------------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+  padding: 5vh 10vw;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  cursor: pointer; /* Change cursor to indicate images are clickable */
+}
+/* gallary  end --------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* event page start --------------------------------------------------------------------------------------------------- */
+
+.eventHero{
+  height: 50vh;
+  width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: url('./images/5.jpeg');
+  color: whitesmoke;
+  position: relative;
+  
+}
+.eventHero::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control the opacity */
+}
+.eventHero>span>a{
+  color: gold;
+  text-decoration: none;
+}
+.eventHero>h1{
+  font-size: 2.5rem;
+}
+.eventHero>span,.eventHero>h1{
+  z-index: 11;
+}
+/* event page end --------------------------------------------------------------------------------------------------- */
+nav{
+  padding: 3vh 10vw;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+nav>.menu{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+nav>.sidebar,nav>.fa-bars{
+  display: none
+}
+nav>.menu>li{
+  padding: 10px 20px;
+  transition: all .5s;
+}
+nav>.menu>li:hover{
+  background: lightcyan;
+}
+nav>.menu>li>a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+}
+nav>.menu>a>button,nav>.sidebar>ul>a>button{
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  background-color: rgb(15, 124, 124);
+  border: none;
+  border-radius: 5px;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.social>a{
+  height: 40px;
+  width: 40px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.social>a>i{
+  font-size: 1.3rem;
+  color: white;
+}
+@media(max-width:950px){
+  nav>.menu{
+      display: none;
+  }
+  nav>.sidebar{
+      display: block;
+  }
+  nav>.fa-bars{
+      display: block;
+  }
+  .sidebar{
+      background-color: whitesmoke;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      transition: all 1s;
+  }
+  .sidebar>ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      gap: 20px;
+  }
+  .sidebar>ul>li,.sidebar>ul>a>button{
+      padding: 10px;
+  
+  }
+  .sidebar>ul>li{
+      border-bottom: 1px solid black;
+      transition: all .5s;
+  }
+  .sidebar>ul>li:hover{
+      background-color:lightcyan;
+  }
+  .sidebar>ul>li>a{
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: black;
+  }
+  .fa-times{
+      /* font-size: 25px; */
+      position: absolute;
+      top: 20px;
+      right: 20px;
+  }
+  .social{
+      padding: 30px;
+  }
+}
+
+
+/* contat page-------------------------------------------------------------------------------------------- */
+.contactHero{
+  background:url('./images/3.jpeg');
+  background-size: 100% 100%;
+}
+.contactGrid{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  padding: 5vh 10vw;
+  }
+.contactGridItm{
+  background-color: #3B9AB0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactGridItm>img{
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+@media(max-width:768px){
+  .contactGrid{
+      grid-template-rows:1fr;
+      grid-template-columns:1fr;
+      /* background-color: rebeccapurple; */
+  }
+}
