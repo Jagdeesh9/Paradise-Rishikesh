@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Link to Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
     <link rel="stylesheet" href="./new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- Owl Carousel CSS -->
@@ -12,6 +16,9 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="loader-container">
+        <div class="loader"></div>
+      </div>
     <nav>
         <h2>Rishikesh Paradise</h2>
         <ul class="menu">
@@ -20,13 +27,14 @@
             <li><a href="./contact.html">Contact</a></li>
             <li><a href="./gallary.html">Gallary</a></li>
             <li><a href="./packages.html">Packages</a></li>
-            <a href="tel:">
+            <a href="tel:8979991800">
                 <button>Book now</button>
             </a>
             <div class="social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556227596411&sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fa fa-facebook"></i></a>
+                <a href="https://wa.me/8979991800?text=Hello%20there!%20Want%20To%20Talk%20About%20Camp%20Booking"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rishikeshparadise?igsh=MXJlYmpuazY2eThpMg=="><i class="fa fa-instagram"></i></a>
+                <a href="https://youtube.com/@RishikeshParadise"><i class="fa fa-youtube"></i></a>
             </div>
         </ul>
 
@@ -37,23 +45,64 @@
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./gallary.html">Gallary</a></li>
                 <li><a href="./packages.html">Packages</a></li>
-                <a href="tel:">
+                <a href="tel:897999180">
                     <button>Book now</button>
                 </a>
                 <div class="social">
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556227596411&sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fa fa-facebook"></i></a>
+                    <a href="https://wa.me/8979991800?text=Hello%20there!%20Want%20To%20Talk%20About%20Camp%20Booking"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/rishikeshparadise?igsh=MXJlYmpuazY2eThpMg=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://youtube.com/@RishikeshParadise"><i class="fa fa-youtube"></i></a>
                 </div>
             </ul>
             <i class="fa fa-times"></i>
         </div>
         <i class="fa fa-bars"></i>
     </nav>
+
+    <!-- slider-------------------------------------------------------------------- -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="Image 1">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/2.jpeg" alt="Image 2">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/3.jpeg" alt="Image 3">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="Image 1">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/2.jpeg" alt="Image 2">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/3.jpeg" alt="Image 3">
+                <div class="slide-text">Text for Slide 1</div>
+            </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <!-- Add Navigation Arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     <!------------------------------------------- book Your camps-------------------------------------------------->
     <div class="bookingContainer">
         <h2>Book Your Capms with Rishikesh Paradise</h2>
-        <button>Book Now</button>
+        <a href="tel:8979991800">
+            <button>Book Now</button>
+        </a>
     </div>
     <!--- booking end--------------------------------------------------------------------------------------------- -->
 
@@ -215,13 +264,15 @@
     <!-- cta1 start---------------------------------------------------------------------------------------- -->
     <div class="bookingContainer">
         <h2>Book Your Capms with Rishikesh Paradise</h2>
-        <button>Book Now</button>
+        <a href="tel:897999180">
+            <button>Book Now</button>
+        </a>
     </div>
     <!-- cta ends ---------------------------------------------------------------------------------------- -->
    
     <!-- advnetur starts----------------------------------------------------------------------------- -->
     <div class="adventureContainer">
-        <div class="advItms">
+            <div class="advItms">
             <h2>Adventure Activities</h2>
             <span>Most Thrilling Adventure Sports in Rishikesh</span>
         </div>
@@ -397,6 +448,10 @@
     </div>
     <!-- EVENT end----------------------------------------------------------------------------- -->
 
+    <!-- whatsapppbtn------------------------------------------------------------------------ -->
+    <a href="https://wa.me/8979991800?text=Hello%20there!%20Want%20To%20Talk%20About%20Camp%20Booking" id="whatsappbtn"><i class="fa fa-whatsapp"></i></a>
+    <!-- whatsapppbtn------------------------------------------------------------------------ -->
+
     <!-- footer start ------------------------------------------------------------------------------------------>
     <footer>
         <div class="footItms">
@@ -430,9 +485,10 @@
                 <h2>Follow Us</h2>
                 <!-- <span>Katiya Village Road, Shivpuri Rishikesh, Uttarakhand 249192</span> -->
                 <div class="social">
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61556227596411&sfnsn=wiwspwa&mibextid=RUbZ1f"><i class="fa fa-facebook"></i></a>
+                    <a href="https://wa.me/8979991800?text=Hello%20there!%20Want%20To%20Talk%20About%20Camp%20Booking"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/rishikeshparadise?igsh=MXJlYmpuazY2eThpMg=="><i class="fa fa-instagram"></i></a>
+                    <a href="https://youtube.com/@RishikeshParadise"><i class="fa fa-youtube"></i></a>
                 </div>
             </ul>
         </div>
@@ -471,5 +527,21 @@
     }
 })
   </script>
-  <script src="index.html"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Allow pagination bullets to be clickable
+    },
+      autoplay: {
+      delay: 2500, // Delay in milliseconds before auto sliding to the next slide
+    },
+    });
+  </script>
 </html>
